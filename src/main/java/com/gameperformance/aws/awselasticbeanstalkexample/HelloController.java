@@ -10,6 +10,6 @@ public class HelloController {
 
     @GetMapping
     public String graph() {
-        return "Game Performance Graph New Commit ";
+        return "Game Performance Graph New Commit april 7 ";
     }
 }
