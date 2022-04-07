@@ -11,8 +11,8 @@ phases:
       - mvn clean prepare-package war:exploded
   post_build:
     commands:
-      - echo "Entered the post-build phase"
-      - mv target/deploy ./
+      - echo "Post-build Phase, moving exploded files with deploy folder to root"
+      - mv target/deploy/WEB-INF ./WEB-INF
 artifacts:
   files:
-    - deploy/**/*
+    - WEB-INF/**/*
